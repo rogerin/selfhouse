@@ -1,0 +1,66 @@
+div(id="top-nav", class="navbar navbar-default navbar-static-top")
+	div(class="container")
+		div(class="navbar-header")
+			button(type="button", class="navbar-toggle", data-toggle="collapse", data-target=".navbar-collapse")
+				span(class="icon-toggle")
+			a(class="navbar-brand", href="/") SA Tecnologia
+		div(class="navbar-collapse collapse")
+				ul(class="nav navbar-nav")
+					li(class="dropdown")
+						a(href="#", data-toggle="dropdown", class="dropdown-toggle", aria-haspopup="true", aria-expanded="false") Clientes
+							span(class="caret")
+						ul(role="menu" class="dropdown-menu")
+							li(class="dropdown-header") Cliente
+							li
+								a(href="/cliente/cadastrar") Novo Cliente
+							li
+								a(href="/clientes") Listar Clientes
+							li(class="divider")
+							li(class="dropdown-header") Imovel
+							li
+								a(href="/imovel/cadastrar") Novo Imovel
+							li
+								a(href="/imoveis") Listar Imoveis
+							li(class="divider")
+							li(class="dropdown-header") APP
+							li
+								a(href="#") Novo Usuario
+							li
+								a(href="#") Listar Usuarios
+
+							
+					li(class="dropdown")
+						a(class="dropdown-toggle", role="button", data-toggle="dropdown", href="#")
+							span Team 
+							span(class="caret")
+						ul(id="g-account-menu", class="dropdown-menu", role="menu")
+							li
+								a(href="/admin/team/cadastrar") Cadastrar
+							li
+								a(href="/admin/team") Listar
+
+					
+					li(class="dropdown")
+						a(class="dropdown-toggle", role="button", data-toggle="dropdown", href="#")
+							span Usuario 
+							span(class="caret")
+						ul(id="g-account-menu", class="dropdown-menu", role="menu")
+							li
+								a(href="/admin/user/cadastrar") Cadastrar
+							li
+								a(href="/admin/users") Listar
+
+				ul(class="nav navbar-nav navbar-right")
+
+					li(class="dropdown")
+						a(class="dropdown-toggle", role="button", data-toggle="dropdown", href="#")
+							i(class="glyphicon glyphicon-user")
+							span Rogerio Alencar Filho
+							span(class="caret")
+
+						ul(id="g-account-menu", class="dropdown-menu", role="menu")
+							li
+								a(href="#") My Profile
+							li
+								a(href="/logout") Logout
+br
